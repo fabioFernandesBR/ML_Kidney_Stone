@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Modelo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Consulta Modelo</h2>
+    <form id="consultaForm">
+        <label for="calcio">Cálcio (mg/dL):</label>
+        <input type="number" id="calcio" name="calcio" step="any" required>
+
+        <label for="ureia">Ureia (mg/dL):</label>
+        <input type="number" id="ureia" name="ureia" step="any" required>
+
+        <label for="pH">pH:</label>
+        <input type="number" id="ph" name="ph" step="any" required>
+
+        <label for="condutividade">Condutividade (mS/cm):</label>
+        <input type="number" id="condutividade" name="condutividade" step="any" required>
+
+        <label for="gravidade">Gravidade Específica:</label>
+        <input type="number" id="gravidade" name="gravidade" step="any" required>
+
+        <label for="osmolaridade">Osmolaridade (mOsm/L):</label>
+        <input type="number" id="osmolaridade" name="osmolaridade" step="any" required>
+
+        <button type="submit">Consultar</button>
+    </form>
+    <div class="result" id="resultado"> <!-- Campo de resposta inicializado -->
+        <!-- A resposta aparecerá aqui -->
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
