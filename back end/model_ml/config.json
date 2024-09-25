@@ -1,0 +1,4 @@
+{
+    "modelo": "classifier skl version 1_5_2.pkl",
+    "scaler": "scaler skl version 1_5_2.pkl"
+}

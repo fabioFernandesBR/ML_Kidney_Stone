@@ -27,7 +27,10 @@ from sklearn.svm import SVC #Support Vector Machine
 
 from schemas_comm_back_front import *
 
+from classes.model_loader import ModelLoader
+
 # Carregando o modelo de ML exportado a partir do Notebook Colab
+'''
 endereco_do_modelo = "./modelo_ml/classifier skl version 1_5_2.pkl" 
 # coloco no nome do arquivo a versão do Scikit Learning usada para gerar o modelo
 # a versão usada para gerar o modelo deve ser a mesma versão importada aqui no back end
@@ -42,6 +45,14 @@ endereco_do_scaler = "./modelo_ml/scaler skl version 1_5_2.pkl"
 pickle_in = open(endereco_do_scaler, 'rb')
 scaler = pickle.load(pickle_in)
 pickle_in.close()
+'''
+
+# Carregar as configurações do modelo e scaler
+model_loader = ModelLoader()
+
+# Carregar o modelo e o scaler
+modelo = model_loader.get_model()
+scaler = model_loader.get_scaler()
 
 
 # Testando
