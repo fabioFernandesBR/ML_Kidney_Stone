@@ -1,0 +1,30 @@
+# ML Kidney Stone (ou PedraGPT) - back-end
+Diretório do projeto de back-end que embarca o pipeline de machine learning (scaler + modelo), recebe e responde às requisições do Front End.
+
+## Arquitetura
+A arquitetura é bem simples. O back-end estará rodando no endereço 'http://127.0.0.1:5000/' e receberá requisições via HTTP na rota '/consultamodelo', via método POST. 
+O back-end também embarca um pipeline de machine learning, que fará as previsões a partir dos dados passados pelo front-end pelo HTTP.
+Os arquivos do pipeline estão disponíveis em um diretório específico para isto (model_ml). Esses arquivos foram exportados pelo notebook Google Colab após o treinamento do modelo e ajuste do scaler com o dataset completo. 
+Também no diretório model_ml há um arquivo config.json, que apenas informa os nomes dos demais arquivos. 
+Sempre que modelo e scaler forem atualizados, por exemplo após um concept drift ou por qualquer outro motivo, é necessário substituir estes 2 arquivos na pasta e atualizar o config.json, para que o back-end busque sempre o modelo correto.
+Exemplo de config.json:
+{
+    "modelo": "classifier skl version 1_5_2.pkl",
+    "scaler": "scaler skl version 1_5_2.pkl"
+}
+
+Nenhum banco de dados é usado nessa aplicação.
+
+## Testes
+Este back-end também implementa testes automatizados. Na pasta tests há um readme específico para isso.
+
+## Instalação
+### Para rodar este MS diretamente do IDE.
+No Windows:
+1. Faça o clone deste repositório para sua máquina.
+2. Crie um ambiente virtual, com o comando "Python -m venv env", diretamente no terminal.
+3. Em seguida ative o ambiente virtual, com o comando ".\env\Scripts\activate".
+4. Instale as dependências necessárias com o comando "pip install -r requirements.txt".
+5. Execute com o comando "flask run --host 0.0.0.0 --port 5002"
+Para Mac ou Linux, a lógica é a mesma, mas faça as adaptações necessárias.
+
