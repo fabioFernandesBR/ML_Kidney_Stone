@@ -1,0 +1,30 @@
+O dataset é uma cópia do dataset encontrado em: https://www.kaggle.com/datasets/harshghadiya/kidneystone
+
+Informações sobre as variáveis utilizadas (fonte: chatGPT):
+Em um exame de urina, algumas variáveis são úteis para a avaliação da função renal e detecção de condições como pedras nos rins (litíase renal). Vamos explicar cada uma delas:
+
+1. **Gravity (Densidade específica ou Gravidade específica)**:
+   - Refere-se à densidade da urina em comparação com a água. Ela mede a concentração de solutos na urina, ajudando a avaliar a capacidade dos rins de concentrar ou diluir a urina. Valores elevados podem indicar desidratação ou a presença de substâncias como proteínas ou glicose, enquanto valores baixos podem sugerir problemas de concentração renal.
+   - **Valor normal**: Geralmente entre 1.005 e 1.030.
+
+2. **pH**:
+   - Mede a acidez ou alcalinidade da urina. O pH da urina pode ser influenciado pela dieta, medicamentos e condições como infecções do trato urinário e pedras nos rins. Pedras de ácido úrico, por exemplo, tendem a se formar em urina ácida, enquanto pedras de fosfato podem surgir em urina alcalina.
+   - **Valor normal**: Entre 4.5 e 8.0, com valores médios em torno de 6.0.
+
+3. **Osmolaridade**:
+   - Indica a concentração total de partículas (solutos) dissolvidas na urina, sendo um indicador da função renal e do balanço hídrico do corpo. Alta osmolaridade sugere uma urina concentrada, que pode ocorrer com desidratação, enquanto uma osmolaridade baixa indica uma urina diluída.
+   - **Valor normal**: Aproximadamente entre 300 e 900 mOsm/kg.
+
+4. **Condutividade (Cond)**:
+   - Refere-se à capacidade da urina de conduzir eletricidade, que depende da concentração de íons na urina (como sódio, cloreto e potássio). Isso pode ser um indicador indireto da concentração de sais e eletrólitos. Pode estar alterada em condições como desidratação ou excesso de ingestão de eletrólitos.
+   - **Valor normal**: Pode variar dependendo da dieta e estado de hidratação, mas gira em torno de 5 a 20 mS/cm.
+
+5. **Ureia**:
+   - Produto final do metabolismo das proteínas, a ureia é excretada pelos rins. Altos níveis de ureia na urina podem indicar que o corpo está excretando corretamente os produtos do metabolismo proteico, enquanto níveis baixos podem ser sinais de problemas renais.
+   - **Valor normal**: Varia, mas geralmente está entre 12 e 20 g/24h.
+
+6. **Cálcio**:
+   - A presença de cálcio na urina (calciúria) é importante, pois níveis elevados podem estar associados à formação de pedras nos rins, principalmente as de oxalato de cálcio ou fosfato de cálcio.
+   - **Valor normal**: Geralmente até 250 mg/dia para homens e até 200 mg/dia para mulheres.
+
+Esses parâmetros ajudam a entender o ambiente químico da urina e a predisposição para formação de cálculos renais, além de fornecerem informações sobre a função renal e o equilíbrio de líquidos e eletrólitos no corpo.
