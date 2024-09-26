@@ -1,1 +1,9 @@
+## Testes automatizados
 
+5 testes são executados pelo módulo pytest:
+1. carregamento: testa se o modelo carregado é diferente de None, se possui o método predict, se o scaler carregado é diferente de None e se possui o método transform.
+2. tipo de output: testa se o modelo retorna os números 0 ou 1.
+3. resultados esperados: testa se o modelo retorna os mesmos valores que retornou na fase de construção do pipeline. Neste teste é usado um arquivo csv que contém os inputs e outputs testados na fase de construção do modelo.
+Com isso garantimos que o modelo embarcado está retornando os mesmos valores que o modelo criado no notebook está retornando.
+4. input válido: testa se o backend retorna código 200 para a solicitação HTTP quando usa dados completos, válidos no formato correto.
+5. input inválido: testa se o backend retorna código 422 para a solicitação HTTP quando usa dados incompletos.
