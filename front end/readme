@@ -1,0 +1,4 @@
+Este front-end faz parte de uma aplicação full stack. É constituído por 1 arquivo HTML e 1 CSS simples, e 1 arquivo de scripts em Java Script que faz requisições ao back-end e recebe as respostas.
+
+Para rodar, basta executar o HTML em um navegador. Garanta que a aplição backend esteja rodando no endereço http://127.0.0.1:5000/.
+
